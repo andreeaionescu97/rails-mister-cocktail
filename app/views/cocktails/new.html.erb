@@ -1,5 +1,10 @@
+<div class="container-add-form">
+<div class="add-title"><h1> Add<br>a<br>Cocktail </h1></div>
+<div class="add-form">
 <%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :name, :class => "create-cocktail-label"%>
+  <%= f.text_field :name, :class => "new-cocktail-button" %>
   <%= f.submit %>
 <% end %>
+</div>
+</div>

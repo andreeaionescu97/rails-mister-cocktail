@@ -1,11 +1,14 @@
+<div class="banner">
 <h1>Cocktails</h1>
+<%= link_to "Add New Cocktail", new_cocktail_path, :class => "new-cocktail-button" %>
+</div>
+
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <li class="cocktail-card"><div class="image-card"></div><%= link_to cocktail.name, cocktail_path(cocktail), :class => "cocktail-name" %></li>
+    <%= link_to "Delete", cocktail_path(cocktail), method: :delete, data: { confirm: "fuck rails" } %>
   <% end %>
 </ul>
-
-<%= link_to "Add New Cocktail", new_cocktail_path %>
 
 
