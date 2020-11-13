@@ -6,8 +6,8 @@
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li class="cocktail-card"><div class="image-card"></div><%= link_to cocktail.name, cocktail_path(cocktail), :class => "cocktail-name" %></li>
-    <%= link_to "Delete", cocktail_path(cocktail), method: :delete, data: { confirm: "fuck rails" } %>
+    <li class="cocktail-card"><div class="image-card"></div><%= link_to cocktail.name, cocktail_path(cocktail), :class => "cocktail-name" %><%= link_to "Delete", cocktail_path(cocktail), method: :delete, data: { confirm: "fuck rails" }, :class => "delete-button" %></li>
+
   <% end %>
 </ul>
 

@@ -78,6 +78,19 @@ body {
   margin-top: 25px;
 }
 
+.delete-button {
+  color: orange;
+  text-decoration: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  height:20px;
+  margin-top: 60px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 1px;
+}
+
 .container-add-form {
   display: flex;
   width: 600px;
